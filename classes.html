@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="StudySprint Chemistry Live Classes — View upcoming sessions and join via Google Meet.">
+  <title>StudySprint Chemistry — Live Classes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="classes">
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span>StudySprint <small>Chemistry</small></span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">e-Library</a>
+      <a href="blog.html">Blog</a>
+      <a class="active" href="classes.html">Live Classes</a>
+      <a href="notifications.html">Notifications <span class="badge" id="nav-notif-count">0</span></a>
+      <a href="profile.html" id="nav-profile-link">Profile</a>
+      <a href="signin.html" id="nav-signin-link">Sign In</a>
+    </nav>
+  </header>
+
+  <section class="hero hero-compact">
+    <span class="eyebrow">✦ Peer &amp; host study rooms</span>
+    <h1>Live Chemistry Sessions</h1>
+    <p>Join upcoming review sessions using host-provided Google Meet links, or post a new session below.</p>
+  </section>
+
+  <main class="two-col">
+    <section>
+      <div class="section-head">
+        <div>
+          <h2>Upcoming Sessions</h2>
+          <p id="classes-storage-mode">Stored in browser local storage</p>
+        </div>
+      </div>
+      <div id="classes-list" class="stack"></div>
+    </section>
+
+    <aside class="panel">
+      <h3>Add a Live Session</h3>
+      <p class="muted">Paste an existing <code>meet.google.com</code> link created by the session host.</p>
+      <form id="class-form" class="form-stack">
+        <label>
+          <span>Session Title</span>
+          <input type="text" id="class-title" placeholder="e.g., Organic Mechanisms Sprint" required>
+        </label>
+        <label>
+          <span>Topic</span>
+          <select id="class-topic">
+            <option value="General">General Chemistry</option>
+            <option value="Organic">Organic Chemistry</option>
+            <option value="Physical">Physical Chemistry</option>
+            <option value="Analytical">Analytical Chemistry</option>
+          </select>
+        </label>
+        <label>
+          <span>Date &amp; Time</span>
+          <input type="datetime-local" id="class-time" required>
+        </label>
+        <label>
+          <span>Host Name</span>
+          <input type="text" id="class-host" placeholder="e.g., Study Group Lead" required>
+        </label>
+        <label>
+          <span>Google Meet URL</span>
+          <input type="url" id="class-meet" placeholder="https://meet.google.com/xxx-xxxx-xxx" required>
+        </label>
+        <button type="submit" class="btn btn-primary">Publish Session</button>
+      </form>
+      <p id="class-feedback" class="feedback" role="status"></p>
+    </aside>
+  </main>
+
+  <footer>
+    StudySprint Chemistry — Independent student study resource.
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

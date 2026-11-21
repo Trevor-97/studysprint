@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign in to StudySprint Chemistry.">
+  <title>StudySprint Chemistry — Sign In</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="signin-page" data-page="signin">
+  <div class="signin-layout">
+    <section class="signin-intro">
+      <a class="signin-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>StudySprint <small style="color:#62c5f4;">Chemistry</small></span>
+      </a>
+
+      <div class="intro-copy">
+        <p class="intro-kicker">STUDENT STUDY PORTAL</p>
+        <h1>Master chemistry, <span>one sprint</span> at a time.</h1>
+        <p class="intro-description">
+          Access curated notes, practice sets, concept explainers, and live study sessions—all saved in one independent workspace.
+        </p>
+      </div>
+
+      <p class="signin-copyright">© 2026 StudySprint Chemistry — Independent student study project.</p>
+    </section>
+
+    <section class="signin-side">
+      <form class="signin-form" id="signin-form">
+        <h2><span>✦</span><span id="signin-heading" style="color:#f8faff;margin-right:0;">Welcome back</span></h2>
+        <p class="signin-form-intro" id="signin-subtext">Sign in to sync your study profile and sessions.</p>
+
+        <label class="signin-label" for="signin-name" id="signin-name-wrap" hidden>Display Name</label>
+        <input class="signin-input" type="text" id="signin-name" placeholder="e.g., Trevor" maxlength="40" hidden>
+
+        <label class="signin-label" for="signin-email">Email Address</label>
+        <input class="signin-input" type="email" id="signin-email" placeholder="you@example.com" required>
+
+        <label class="signin-label" for="signin-password">Password</label>
+        <div class="password-field">
+          <input class="signin-input" type="password" id="signin-password" placeholder="Enter your password" minlength="6" required>
+          <button type="button" class="password-toggle" id="toggle-password" aria-label="Show or hide password">👁</button>
+        </div>
+
+        <label class="remember-row">
+          <input type="checkbox" id="remember-me" checked>
+          <span>Keep me signed in on this browser</span>
+        </label>
+
+        <button type="submit" class="signin-submit" id="signin-submit">Sign In</button>
+
+        <div class="signin-divider">or</div>
+
+        <button type="button" class="signin-google-btn" id="signin-google-btn">
+          <span>G</span> Continue with Google
+        </button>
+
+        <p class="signin-status" id="signin-status" role="status"></p>
+
+        <p class="signin-help">
+          <span id="signin-toggle-prompt">New to StudySprint?</span>
+          <a href="signup.html">Create an account</a>
+        </p>
+        <a class="back-link" href="index.html">← Back to Chemistry e-Library</a>
+      </form>
+    </section>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

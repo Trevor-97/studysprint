@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="StudySprint Chemistry Profile Settings.">
+  <title>StudySprint Chemistry — Profile Settings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="profile">
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span>StudySprint <small>Chemistry</small></span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">e-Library</a>
+      <a href="blog.html">Blog</a>
+      <a href="classes.html">Live Classes</a>
+      <a href="notifications.html">Notifications <span class="badge" id="nav-notif-count">0</span></a>
+      <a class="active" href="profile.html" id="nav-profile-link">Profile</a>
+      <a href="signin.html" id="nav-signin-link">Sign In</a>
+    </nav>
+  </header>
+
+  <section class="hero hero-compact">
+    <span class="eyebrow">✦ Student workspace</span>
+    <h1>Profile Settings</h1>
+    <p>Customize your display name locally or connect your Google account once Firebase is configured.</p>
+  </section>
+
+  <main class="narrow">
+    <section class="panel">
+      <h2>Display Name</h2>
+      <p class="muted">Saved in your browser so your name appears across StudySprint.</p>
+      <form id="profile-form" class="form-stack">
+        <label>
+          <span>Display Name</span>
+          <input type="text" id="display-name-input" placeholder="Enter your name or nickname" maxlength="40" required>
+        </label>
+        <button type="submit" class="btn btn-primary">Save Display Name</button>
+      </form>
+      <p id="profile-feedback" class="feedback" role="status"></p>
+    </section>
+
+    <section class="panel" style="margin-top: 20px;">
+      <h2>Google Sign-In (Optional)</h2>
+      <p id="auth-status" class="muted">Checking Firebase configuration...</p>
+      <div id="auth-user-card" class="user-card" hidden>
+        <img id="auth-avatar" src="" alt="Profile avatar">
+        <div>
+          <strong id="auth-user-name"></strong>
+          <div id="auth-user-email" class="muted"></div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button type="button" id="google-signin-btn" class="btn btn-primary" disabled>Sign in with Google</button>
+        <button type="button" id="google-signout-btn" class="btn btn-ghost" hidden>Sign out</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    StudySprint Chemistry — Independent student study resource.
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

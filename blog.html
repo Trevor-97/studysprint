@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="StudySprint Chemistry Blog — Concept explainers grouped by topic.">
+  <title>StudySprint Chemistry — Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="blog">
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span>StudySprint <small>Chemistry</small></span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">e-Library</a>
+      <a class="active" href="blog.html">Blog</a>
+      <a href="classes.html">Live Classes</a>
+      <a href="notifications.html">Notifications <span class="badge" id="nav-notif-count">0</span></a>
+      <a href="profile.html" id="nav-profile-link">Profile</a>
+      <a href="signin.html" id="nav-signin-link">Sign In</a>
+    </nav>
+  </header>
+
+  <section class="hero hero-compact">
+    <span class="eyebrow">✦ Quick concept breakdowns</span>
+    <h1>Chemistry Concept Explainers</h1>
+    <p>Bite-sized guides grouped by topic to clarify tricky reactions, equations, and lab principles.</p>
+  </section>
+
+  <main>
+    <div class="toolbar">
+      <div class="chip-row" id="blog-topic-filters">
+        <button class="chip active" data-topic="all">All Topics</button>
+        <button class="chip" data-topic="General Chemistry">General Chemistry</button>
+        <button class="chip" data-topic="Organic Chemistry">Organic Chemistry</button>
+        <button class="chip" data-topic="Physical Chemistry">Physical Chemistry</button>
+      </div>
+    </div>
+
+    <div id="blog-container" class="stack"></div>
+  </main>
+
+  <footer>
+    StudySprint Chemistry — Independent student study resource.
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

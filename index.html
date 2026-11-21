@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="StudySprint Chemistry — Search and filter chemistry notes, practice problems, study guides, and past papers.">
+  <title>StudySprint Chemistry — e-Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="library">
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span>StudySprint <small>Chemistry</small></span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="active" href="index.html">e-Library</a>
+      <a href="blog.html">Blog</a>
+      <a href="classes.html">Live Classes</a>
+      <a href="notifications.html">Notifications <span class="badge" id="nav-notif-count">0</span></a>
+      <a href="profile.html" id="nav-profile-link">Profile</a>
+      <a href="signin.html" id="nav-signin-link">Sign In</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">✦ Your chemistry study era starts here</span>
+    <h1>Find your next chemistry study win.</h1>
+    <p>Search and filter chemistry notes, practice problems, study guides, and past papers in one clean hub.</p>
+  </section>
+
+  <section class="search-panel" aria-label="Search and filter chemistry resources">
+    <label class="search-wrap">
+      <span class="search-icon" aria-hidden="true">⌕</span>
+      <input id="search" type="search" placeholder="Search by chemistry topic, keyword, or resource..." autocomplete="off">
+    </label>
+
+    <div class="filters">
+      <span class="filter-label">Topic</span>
+      <div class="chip-row" id="topic-filters" aria-label="Filter by topic">
+        <button class="chip active" data-filter="topic" data-value="all" aria-pressed="true">All topics</button>
+        <button class="chip" data-filter="topic" data-value="General" aria-pressed="false">General</button>
+        <button class="chip" data-filter="topic" data-value="Organic" aria-pressed="false">Organic</button>
+        <button class="chip" data-filter="topic" data-value="Physical" aria-pressed="false">Physical</button>
+        <button class="chip" data-filter="topic" data-value="Analytical" aria-pressed="false">Analytical</button>
+      </div>
+    </div>
+
+    <div class="filters">
+      <span class="filter-label">Resource type</span>
+      <div class="chip-row" id="type-filters" aria-label="Filter by resource type">
+        <button class="chip active" data-filter="type" data-value="all" aria-pressed="true">All types</button>
+        <button class="chip" data-filter="type" data-value="Notes" aria-pressed="false">Notes</button>
+        <button class="chip" data-filter="type" data-value="Practice problems" aria-pressed="false">Practice problems</button>
+        <button class="chip" data-filter="type" data-value="Study guides" aria-pressed="false">Study guides</button>
+        <button class="chip" data-filter="type" data-value="Past papers" aria-pressed="false">Past papers</button>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="section-head">
+      <div>
+        <h2>Chemistry e-Library</h2>
+        <p>Pick a topic, filter by format, and jump straight into study mode.</p>
+      </div>
+      <span id="result-count" aria-live="polite"></span>
+    </div>
+
+    <section class="grid" id="resource-grid" aria-label="Chemistry study resources"></section>
+    <div class="empty" id="empty-state">No matching chemistry resources yet. Try another keyword or clear your filters.</div>
+  </main>
+
+  <footer>
+    StudySprint Chemistry is an independent, student-friendly study project. Replace placeholder links with authorized materials before sharing.
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

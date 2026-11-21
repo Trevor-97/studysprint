@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="StudySprint Chemistry Notifications.">
+  <title>StudySprint Chemistry — Notifications</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="notifications">
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span>StudySprint <small>Chemistry</small></span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">e-Library</a>
+      <a href="blog.html">Blog</a>
+      <a href="classes.html">Live Classes</a>
+      <a class="active" href="notifications.html">Notifications <span class="badge" id="nav-notif-count">0</span></a>
+      <a href="profile.html" id="nav-profile-link">Profile</a>
+      <a href="signin.html" id="nav-signin-link">Sign In</a>
+    </nav>
+  </header>
+
+  <section class="hero hero-compact">
+    <span class="eyebrow">✦ Activity &amp; updates</span>
+    <h1>Notifications</h1>
+    <p>Updates saved in your browser when new study sessions are posted or settings change.</p>
+  </section>
+
+  <main class="narrow">
+    <div class="section-head">
+      <div>
+        <h2>Recent Updates</h2>
+        <p>Stored locally in your browser.</p>
+      </div>
+      <div class="btn-row">
+        <button type="button" id="mark-all-read" class="btn btn-ghost">Mark all read</button>
+        <button type="button" id="clear-notifs" class="btn btn-ghost">Clear all</button>
+      </div>
+    </div>
+
+    <div id="notifications-list" class="stack"></div>
+    <div class="empty" id="notif-empty">You’re all caught up—no notifications yet.</div>
+  </main>
+
+  <footer>
+    StudySprint Chemistry — Independent student study resource.
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
